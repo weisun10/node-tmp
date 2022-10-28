@@ -6,7 +6,7 @@ var
   inbandStandardTests = require('./inband-standard'),
   assertions = require('./assertions'),
   childProcess = require('./child-process').genericChildProcess,
-  rimraf = require('rimraf'),
+  rimraf = require('./util').rimraf,
   tmp = require('../lib/tmp');
 
 

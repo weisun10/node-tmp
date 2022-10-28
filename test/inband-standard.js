@@ -5,7 +5,7 @@ var
   fs = require('fs'),
   path = require('path'),
   assertions = require('./assertions'),
-  rimraf = require('rimraf'),
+  rimraf = require('./util').rimraf,
   tmp = require('../lib/tmp');
 
 module.exports = function inbandStandard(isFile, beforeHook, sync = false) {
